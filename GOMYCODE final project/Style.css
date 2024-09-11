@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('final\ project\ background\ image.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.cart {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.item-image {
+    width: 100px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+.item-name, .item-price, .item-quantity {
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.like-btn {
+    background: none;
+    border: none;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.like-btn::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #ccc; 
+    clip-path: path('M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z');
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.like-btn.red::before {
+    background-color: #e4405f; 
+}
+
+.decrement, .increment {
+    background-color: #ddd;
+    color: #333;
+}
+
+.delete-all {
+    background-color: #f44336; 
+    color: #fff;
+    margin-top: 20px;
+}
+
+.decrement:hover, .increment:hover, .delete-all:hover {
+    opacity: 0.8;
+}
+
+.total {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}

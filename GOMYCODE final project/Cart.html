@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="cart">
+        <h1>Your Shopping Cart</h1>
+        <ul id="cart-items">
+            
+            <li class="cart-item" data-id="1">
+                <img src="item1.jpg" alt="Item 1" class="item-image">
+                <span class="item-name">Sokany Moulin Electrique à café 500W</span>
+                <span class="item-price">99TND</span>
+                <button class="like-btn"></button>
+                <button class="decrement">-</button>
+                <span class="item-quantity">0</span>
+                <button class="increment">+</button>
+            </li>
+            <li class="cart-item" data-id="2">
+                <img src="item2.jpg" alt="Item 2" class="item-image">
+                <span class="item-name">Inkax Ecouteur Sans fils - T3 - Blanc</span>
+                <span class="item-price">40TND</span>
+                <button class="like-btn"></button>
+                <button class="decrement">-</button>
+                <span class="item-quantity">0</span>
+                <button class="increment">+</button>
+            </li>
+            <li class="cart-item" data-id="3">
+                <img src="item3.jpg" alt="Item 3" class="item-image"> 
+                <span class="item-name">XIAOMI Mi Redmi - Power Bank 20000 MAh - 18W</span>
+                <span class="item-price">75TND</span>
+                <button class="like-btn"></button>
+                <button class="decrement">-</button>
+                <span class="item-quantity">0</span>
+                <button class="increment">+</button>
+            </li>
+            <li class="cart-item" data-id="4">
+                <img src="item4.jpg" alt="Item 4" class="item-image"> 
+                <span class="item-name">Hp Imprimante 3en1 Wifi a Réservoir Intégré <br> Smart Tank 581 Garantie 1an +4 Bouteilles d’encre</span>
+                <span class="item-price">399TND</span>
+                <button class="like-btn"></button>
+                <button class="decrement">-</button>
+                <span class="item-quantity">0</span>
+                <button class="increment">+</button>
+            </li>
+            <li class="cart-item" data-id="5">
+                <img src="item5.jpg" alt="Item 5" class="item-image"> 
+                <span class="item-name">Tactical Nuclear Missile</span>
+                <span class="item-price">1000000TND</span>
+                <button class="like-btn"></button>
+                <button class="decrement">-</button>
+                <span class="item-quantity">0</span>
+                <button class="increment">+</button>
+            </li>
+            <li class="cart-item" data-id="6">
+                <img src="item6.jpg" alt="Item 6" class="item-image"> 
+                <span class="item-name">Blueprints for Metal Gear Rex</span>
+                <span class="item-price">500000000TND</span>
+                <button class="like-btn"></button>
+                <button class="decrement">-</button>
+                <span class="item-quantity">0</span>
+                <button class="increment">+</button>
+            </li>
+        </ul>
+        <div class="total">
+            <span>Total Price: TND<span id="total-price">0.00</span></span>
+        </div>
+        <button id="delete-all" class="delete-all">Delete All</button>
+    </div>
+    <script src="Cart.js"></script>
+</body>
+</html>
